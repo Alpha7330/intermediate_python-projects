@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random
 import pyperclip
-# ---------------------------- PASSWORD GENERATOR ------------------------------- #
+
 #Password Generator Project
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -31,8 +31,7 @@ def generate_password():
     pyperclip.copy(password)
     
 
-    # print(f"Your password is: {password}")
-# ---------------------------- SAVE PASSWORD ------------------------------- #
+
 def save():
     website=website_entry.get()
     email=email_entry.get()
@@ -52,7 +51,7 @@ def save():
 
 
 
-# ---------------------------- UI SETUP ------------------------------- #
+
 window=Tk()
 window.title("password_manager")
 window.config(padx=50,pady=50)
